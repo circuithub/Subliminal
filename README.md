@@ -14,4 +14,4 @@ Includes: Snippets, Color Schemes, Good Karma
 Type `'''` (three apostrophes) and hit tab to insert the template. Use the tab key to navigate the template
 
 ### Color theme (optional of course)
-Navigate via the application top menu: Sublime Text 2 -> Preferences -> Color Scheme -> CircuitHub
+Navigate via the application top menu: Sublime Text 2 -> Preferences -> Color Scheme -> User -> CircuitHub

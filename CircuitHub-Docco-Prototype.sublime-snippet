@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
 		#**${1:nameOfFunction}** - ${2:Summary description}
-	    #    1. ${3:Notes or side effect warnings}
-	    #    2. ${4:Notes or side effect warnings}	 
+	        #    1. ${3:Notes or side effect warnings}
+	        #    2. ${4:Notes or side effect warnings}	 
 		#+ *${5:firstParam}* - ${6:Parameter description and notes}	
 		#+ *${7:cbEventName}(${8:cbParam1}, ${9:cbParam2}, ${10:cbParam3})* - ${11:This is the callback}			
 		#		+ *$8* - $12
@@ -10,6 +10,13 @@
 		#		+ *$10* - $14]]>	
 	</content>	
 	<tabTrigger>'''</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.coffeescript</scope>
+</snippet>
+
+<snippet>
+	<content><![CDATA[
+		console.log "\n\n\n=-=-=[${1:tag}]", ${2:message}, "\n\n\n"
+	</content>	
+	<tabTrigger>```</tabTrigger>
+	<scope>source.coffeescript</scope>
 </snippet>

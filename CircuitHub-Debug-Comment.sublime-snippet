@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+		console.log "\n\n\n=-=-=[${1:tag}]", ${2:message}, "\n\n\n"
+	</content>	
+	<tabTrigger>```</tabTrigger>
+	<scope>source.coffeescript</scope>
+</snippet>

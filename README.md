@@ -6,7 +6,12 @@ Customize the Sublime Editor environment for use with CircuitHub.
 Includes: Snippets, Color Schemes, Good Karma
 
 ## Installation on Mac
+
+### Version 2
 `git clone git@github.com:circuithub/subliminal.git ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/CircuitHub`
+
+### Version 3
+`git clone git@github.com:circuithub/subliminal.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/CircuitHub`
 
 ## Usage
 

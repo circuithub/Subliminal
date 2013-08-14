@@ -29,8 +29,8 @@ class ColorSpecCommand(sublime_plugin.TextCommand):
             if (version >= 3000):
               v.add_regions('color_'+str(prevPosition), [sublime.Region(prevPosition, v.size())], styleToUse, '', sublime.DRAW_NO_OUTLINE)          
             else:
-              v.add_regions('color_'+str(prevPosition), [sublime.Region(prevPosition, v.size())], styleToUse)          
-          break
+              v.add_regions('color_'+str(prevPosition), [sublime.Region(prevPosition, v.size())], styleToUse)    
+          break      
         startPosition = r.begin()
         text = v.substr(r)
         v.erase(edit, r)

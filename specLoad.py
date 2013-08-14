@@ -13,7 +13,7 @@ class SpecEvents(sublime_plugin.EventListener):
 
   def convertSpecFiles(self, view):
     if not self.executing:
-      if (not view.file_name()):  # output panel
+      if (not view.name()):  # output panel
         text = view.substr(sublime.Region(0, view.size()-1))
         if (text.find("Finished in") > -1):
           self.executing = True

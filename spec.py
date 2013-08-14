@@ -18,7 +18,6 @@ class ColorSpecCommand(sublime_plugin.TextCommand):
       # styleRegions = v.find_all('\x1B\[[^A-Za-z]*m')
       v = self.view
       version = int(sublime.version())
-      print(version)
 
       prevPosition = 0
       styleToUse = ''

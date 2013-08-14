@@ -22,7 +22,8 @@ Type `'''` (three apostrophes) and hit tab to insert the template. Use the tab k
 Navigate via the application top menu: Sublime Text 2 -> Preferences -> Color Scheme -> User -> CircuitHub
 
 ### Spec file colouring
-To have this work, you have to have the CH-Monokai theme selected.  
+To have this work, you have to have the CH-Monokai theme selected (Tomorrow-Night-Blue-Circuits will also work,
+but the colouring does not look very good).  
 * Whenever a spec file is loaded or modified which has console colour symbols embedded, it will be converted
 to have the colours displayed.  
 * When running a test directly (via the sublime `run` command), a new window will be opened with the coloured 

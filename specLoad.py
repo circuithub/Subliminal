@@ -29,10 +29,10 @@ class SpecEvents(sublime_plugin.EventListener):
           view.window().focus_view(testView)   
           testView.show(0)          
           self.executing = False
-          print "Converted ouput spec..."
+          print("Converted ouput spec...")
 
       elif (view.file_name().find(".spec") != -1):
         self.executing = True
         view.run_command("color_spec")                 
         self.executing = False
-        print "Converted spec file: ", view.file_name()
+        print("Converted spec file: ", view.file_name())

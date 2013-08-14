@@ -23,7 +23,7 @@ class ColorSpecCommand(sublime_plugin.TextCommand):
         r = v.find(r'\x1B\[[^A-Za-z]*m',prevPosition)
         if (r == None):
           if not styleToUse == '':
-            print styleToUse
+            print(styleToUse)
             v.add_regions('color_'+str(prevPosition), [sublime.Region(prevPosition, v.size())], styleToUse)          
           break
         startPosition = r.begin()

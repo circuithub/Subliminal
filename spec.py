@@ -1,8 +1,8 @@
 import sublime, sublime_plugin
 
-# only supports colors for now
-# ugly implementation, could be cleaned up, but I don't really see much value
-# in doing that
+# only supports (a few) colors for now
+# could be cleaned up, but I don't really see much value
+# in doing that right now
 class ColorSpecCommand(sublime_plugin.TextCommand):
    def run(self, edit):
       undoStyle = '\x1B[39m'
@@ -39,7 +39,7 @@ class ColorSpecCommand(sublime_plugin.TextCommand):
             styleToUse = s[0]
         prevPosition = startPosition
 
-class ColorSpecMessageCommand(sublime_plugin.TextCommand):
+class ColorSpecAddTextCommand(sublime_plugin.TextCommand):
    def run(self, edit, text):
       self.view.insert(edit, 0, text)
       self.view.insert(edit, 0, "=============================================\n")

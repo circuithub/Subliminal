@@ -179,6 +179,94 @@
 				<string>#FFFFFF</string>
 			</dict>
 		</dict>
+
+		<!-- CH colours -->
+		<dict>
+			<key>name</key>
+			<string>ch.grey</string>
+			<key>scope</key>
+			<string>ch.grey</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#aaaaaa</string>
+				<key>background</key>
+				<string>#000A32</string> 
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>ch.blue</string>
+			<key>scope</key>
+			<string>ch.blue</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#5555ff</string>
+				<key>background</key>
+				<string>#000A32</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>ch.magenta</string>
+			<key>scope</key>
+			<string>ch.magenta</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff55ff</string>
+				<key>background</key>
+				<string>#000A32</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>ch.green</string>
+			<key>scope</key>
+			<string>ch.green</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#55ff55</string>
+				<key>background</key>
+				<string>#000A32</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>ch.red</string>
+			<key>scope</key>
+			<string>ch.red</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff5555</string>
+				<key>background</key>
+				<string>#000A32</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>ch.yellow</string>
+			<key>scope</key>
+			<string>ch.yellow</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffff55</string>
+				<key>background</key>
+				<string>#000A32</string>
+				<key>outline</key>
+				<string>#000A32</string>
+	
+			</dict>
+		</dict>
+
+		<!-- CH colours end -->
 	</array>
 	<key>uuid</key>
 	<string>3F4BB232-3C3A-4396-99C0-06A9573715E9</string>

@@ -18,7 +18,7 @@ class SpecEvents(sublime_plugin.EventListener):
         if (text.find("Finished in") > -1):
           self.executing = True
           views = view.window().views()
-          testView = filter(lambda v: v.name() ==  self.TEST_SPEC_NAME, views)
+          testView = list(filter(lambda v: v.name() ==  self.TEST_SPEC_NAME, views))
           if (len(testView) == 0):
             testView = view.window().new_file()
             testView.set_name(self.TEST_SPEC_NAME)
@@ -29,10 +29,10 @@ class SpecEvents(sublime_plugin.EventListener):
           view.window().focus_view(testView)   
           testView.show(0)          
           self.executing = False
-          print "Converted ouput spec..."
+          print("Converted ouput spec...")
 
       elif (view.file_name().find(".spec") != -1):
         self.executing = True
         view.run_command("color_spec")                 
         self.executing = False
-        print "Converted spec file: ", view.file_name()
+        print("Converted spec file: ", view.file_name())

@@ -13,7 +13,7 @@ class SpecEvents(sublime_plugin.EventListener):
 
   def convertSpecFiles(self, view):
     if not self.executing:
-      if (not view.file_name()):
+      if (not view.file_name()):  # output panel
         text = view.substr(sublime.Region(0, view.size()-1))
         if (text.find("Finished in") > -1):
           self.executing = True
@@ -24,7 +24,7 @@ class SpecEvents(sublime_plugin.EventListener):
             testView.set_name(self.TEST_SPEC_NAME)
           else:
             testView = testView[0]
-          testView.run_command("color_spec_message",{"text": text})
+          testView.run_command("color_spec_add_text", {"text": text})
           testView.run_command("color_spec")    
           view.window().focus_view(testView)   
           testView.show(0)          

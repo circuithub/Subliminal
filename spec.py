@@ -49,9 +49,10 @@ class ColorSpecCommand(sublime_plugin.TextCommand):
 
 class ColorSpecAddTextCommand(sublime_plugin.TextCommand):
    def run(self, edit, text):
+      self.view.erase(edit, sublime.Region(0, self.view.size()-1))
       self.view.insert(edit, 0, text)
-      self.view.insert(edit, 0, "=============================================\n")
-      self.view.insert(edit, 0, "=                                           =\n")
-      self.view.insert(edit, 0, "=                  NEW test                 =\n")
-      self.view.insert(edit, 0, "=                                           =\n")
-      self.view.insert(edit, 0, "\n=============================================\n")
+      #self.view.insert(edit, 0, "=============================================\n")
+      #self.view.insert(edit, 0, "=                                           =\n")
+      #self.view.insert(edit, 0, "=                  NEW test                 =\n")
+      #self.view.insert(edit, 0, "=                                           =\n")
+      #self.view.insert(edit, 0, "\n=============================================\n")

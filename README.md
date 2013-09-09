@@ -32,7 +32,7 @@ If not already installed:
 Type `'''` (three apostrophes) and hit tab to insert the template. Use the tab key to navigate the template
 
 ### Console log comment block
-Type ````` (three backticks) and hit tab to insert the template. Use the tab key to navigate.
+Type `\`\`\`` (three backticks) and hit tab to insert the template. Use the tab key to navigate.
 
 ### Color theme (optional of course)
 Navigate via the application top menu: Sublime Text 2 -> Preferences -> Color Scheme -> Subliminal

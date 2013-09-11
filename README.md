@@ -10,15 +10,21 @@ Includes: Snippets, Color Schemes, Good Karma, Spec file colouring
 ### Install "Package Control" 
 
 If not already installed:
+
 1. View -> Show Console
-2. Enter ```import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')```python
+2. Enter 
+```python
+import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')
+```
 
 ### Add the repository to Package Control
+
 1. Open the add-on menu (Command-Shift-P)
 2. Execute "Package Control: Add Repository"
 3. Enter: ```https://github.com/circuithub/Subliminal```
 
 ### Install the package
+
 1. Open the add-on menu (Command-Shift-P)
 2. Execute "Package Control: Install Package"
 3. (wait for repositories to be scanned)
